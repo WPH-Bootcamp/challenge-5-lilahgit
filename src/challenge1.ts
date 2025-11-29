@@ -14,7 +14,7 @@ function addBook(title:string, author:string, publicationYear:number): void {
 
 function listBooks(): void {
     console.log("All Books:");
-    
+
     if (books.length === 0) {
         console.log("No books available.");
         return;
@@ -22,8 +22,7 @@ function listBooks(): void {
     books.forEach(book => {
         console.log(`- ${book.title} by ${book.author} (${book.publicationYear})`);
     });
-} 
-// menggunakan map
+}
 
 function searchBook(title?: string): void {
     if (!title) {
